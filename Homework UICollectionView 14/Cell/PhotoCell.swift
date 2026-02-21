@@ -19,10 +19,7 @@ class PhotoCell: UICollectionViewCell {
     private let buttonFavorites = UIButton(type: .system)
     private let indicatorWatchingOnline = UIImageView()
     
-    var isLiked: Bool = false {
-        didSet {
-        }
-    }
+    var isLiked: Bool = false
     
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -64,7 +64,6 @@ class MoviesVC: UIViewController {
     
     private func setupSubviews() {
         collectionView.dataSource = self
-        collectionView.delegate = self
         collectionView.register(PhotoCell.self, forCellWithReuseIdentifier: PhotoCell.identifier)
         view.addSubview(collectionView)
     }
@@ -94,6 +93,4 @@ extension MoviesVC: UICollectionViewDataSource {
     }
 }
 
-extension MoviesVC: UICollectionViewDelegate {
-    
-}
+
